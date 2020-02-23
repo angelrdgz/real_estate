@@ -34,4 +34,12 @@ To watch the project just run the next command on your terminal:
 $ php artisan server
 ```
 
+### Compile SCSS Files
+
+To convert SCSS into CSS code, just run the next command:
+
+```sh
+$ npm run dev
+```
+
 
