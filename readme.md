@@ -31,7 +31,7 @@ $ php artisan key:generate
 To watch the project just run the next command on your terminal:
 
 ```sh
-$ php artisan server
+$ php artisan serve
 ```
 
 ### Compile SCSS Files
