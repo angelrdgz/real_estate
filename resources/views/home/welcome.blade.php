@@ -1,24 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends("layouts.public")
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEXSPACIO Inmobiliarios</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-
-<body>
-    <h1>MEXSPACIO Inmobiliarios</h1>
-    <ul>
-        <li>
-            <a href="{{ url('/') }}">Inicio</a>
-        </li>
-        <li>
-            <a href="{{ url('/nosotros') }}">¿Quienes Somos</a>
-        </li>
-    </ul>
-    <h2>Inicio</h2>
-</body>
-
-</html>
+@section("content")
+<div class="home">
+    <div class="home-gallery">
+        <h1>Esta sera la galeria</h1>
+        <div class="container">
+            <h3>Aqui ira la información</h3>
+        </div>
+    </div>
+    <div class="home-services">
+        <h1>Aqui iran los servicios</h1>
+        <div class="container">
+            <h3>Aqui ira la información</h3>
+        </div>
+    </div>
+    <div class="home-properties">
+        <h1>Aqui iran las propiedades</h1>
+        <div class="container">
+            <h3>Aqui ira la información</h3>
+        </div>
+    </div>
+    <div class="home-comments">
+        <h1>Aqui iran los comentarios</h1>
+        <div class="container">
+            <h3>Aqui ira la información</h3>
+        </div>
+    </div>
+</div>
+@endsection

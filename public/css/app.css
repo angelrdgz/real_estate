@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap);@charset "UTF-8";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9953,7 +9953,71 @@ html {
 html body {
   width: 100%;
   height: 100%;
+  font-family: "Muli";
+  /*Custom App Styles*/
+}
+html body .bg-app {
+  background: #17548b;
 }
 html body h2 {
   color: #3d99b0;
+}
+html body .navbar .navbar-brand .logo {
+  width: 150px;
+}
+html body .navbar .navbar-toggler span {
+  color: #fff;
+}
+html body .navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+html body .home {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+html body .home .home-gallery {
+  height: calc(100% - 75px);
+  position: relative;
+  background: url("../images/home_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+html body .home .home-gallery:before {
+  content: "";
+  z-index: -5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#00A5B5, #00538B);
+  opacity: 0.6;
+}
+html body .home div[class^=home-] {
+  height: calc(100% - 75px);
+}
+html body .footer {
+  width: 100%;
+  border-top: 1px solid #000;
+}
+html body .footer .logo-footer {
+  width: 60%;
+}
+html body .footer p {
+  margin: 5px 0;
+}
+html body .footer p .name {
+  font-weight: bolder;
+}
+html body .footer ul {
+  list-style: none;
+  padding: 0;
+}
+html body .footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+html body .footer ul li a i {
+  margin-right: 10px;
 }

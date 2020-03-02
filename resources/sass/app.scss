@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap');
 
 // Variables
 @import 'variables';
@@ -14,9 +14,105 @@ html{
     body{
         width: 100%;
         height: 100%;
+        font-family: 'Muli', ;
+        
+        /*Custom App Styles*/
+        .bg-app{
+            background: $teal;
+        }
 
         h2{
             color: $steelblue;
+        }
+
+        .navbar{
+            
+            .navbar-brand{
+                .logo{
+                    width: 150px;
+                }
+            }
+
+            .navbar-toggler{
+                span{
+                    color: #fff;
+                }
+            }
+
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .home{
+            width: 100%;
+            min-height: 100%;
+            height: 100%;
+
+            .home-gallery{
+
+                height: calc(100% - 75px);
+                position: relative;
+                background: url('../images/home_background.jpg') no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                z-index: -1;
+
+                &:before{
+                    content: "";
+                    z-index: -5;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(#00A5B5, #00538B);
+                    opacity: 0.6;
+                }
+
+            }
+
+            
+            div[class^="home-"]{
+                height: calc(100% - 75px);
+            }
+        }
+
+        .footer{
+            width: 100%;
+            border-top: 1px solid #000;
+            //linear-gradient(#00A5B5, #00538B);
+
+            .logo-footer{
+                width: 60%;
+            }
+
+            p{
+                margin: 5px 0;
+                .name{
+                    font-weight: bolder;
+                }
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
